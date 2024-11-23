@@ -169,17 +169,24 @@ gpu_ids='0'
 checkpoints_dir="${nrCheckpoint}/col_nerfsynth/"
 resume_dir="${nrCheckpoint}/init/dtu_dgt_d012_img0123_conf_agg2_32_dirclr20"
 
-save_iter_freq=10000
-save_point_freq=10000 #301840 #1
-maximum_step=200000 #800000
+# save_iter_freq=10000
+# save_point_freq=10000 #301840 #1
+# maximum_step=200000 #800000
+save_iter_freq=1000
+save_point_freq=1000 #301840 #1
+maximum_step=5000 #800000
 
-niter=10000 #1000000
-niter_decay=10000 #250000
-n_threads=1
+# niter=10000 #1000000
+# niter_decay=10000 #250000
+# n_threads=1
+niter=1000 #1000000
+niter_decay=1000 #250000
+n_threads=8
 
 train_and_test=0 #1
 test_num=10
-test_freq=10000 #1200 #1200 #30184 #30184 #50000
+# test_freq=10000 #1200 #1200 #30184 #30184 #50000
+test_freq=1000 #1200 #1200 #30184 #30184 #50000
 print_freq=40
 test_num_step=10
 
